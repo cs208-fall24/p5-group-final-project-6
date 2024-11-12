@@ -70,7 +70,7 @@ ONE of the TODO items below and then push the updated README.md to github.
 
 * student1 == TODO
 * student2 == TODO
-* student3 == TODO
+* student3 == Oliver MacDonald
 
 === Task 1 - Run the website
 
