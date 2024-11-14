@@ -6,6 +6,11 @@ const sqlite3 = sql.verbose()
 // Create an in memory table to use
 const db = new sqlite3.Database(':memory:')
 
+db.run(`CREATE TABLE student3 (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  comment TEXT NOT NULL,
+  author TEXT NOT NULL)`)
+
 const app = express()
 app.use(express.static('public'))
 app.set('views', 'views')

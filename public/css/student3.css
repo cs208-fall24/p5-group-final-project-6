@@ -1,3 +1,22 @@
 body{
-    background-color: blue;
+    background-color: white;
+}
+
+h1{
+    color: black;
+}
+
+h2{
+    color: blue;
+    font-size: x-large;
+}
+
+h3{
+    color: green;
+    font-size: large;
+}
+
+p{
+    color: grey;
+    font-size: medium;
 }
