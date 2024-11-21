@@ -1,3 +1,23 @@
 body{
-    background-color: hotpink;
+    background-image: url(https://media.istockphoto.com/id/1399105128/vector/golden-glitter-confetti-falling-on-black-vector-background-shining-gold-shimmer-luxury.jpg?s=612x612&w=0&k=20&c=aiC5-QyzDJy6IZ91FiDYSxKvAVX4QZnohGBBbl5tczk=);
+}
+h1{
+    color: white;
+    font-size: 40px;
+    font-family: "Poppins", "Inter", Arial, sans-serif; 
+}
+h2{
+    color: white;
+    font-size: 35px;
+    font-family: "Poppins", "Inter", Arial, sans-serif; 
+}
+h3{
+    color: white;
+    font-size: 30px;
+    font-family: "Proxima Nova", "Roboto", "Montserrat", Arial, sans-serif; 
+}
+p{
+    color: black;
+    font-size: 20px;
+    font-family: "Proxima Nova", "Roboto", "Montserrat", Arial, sans-serif; 
 }
