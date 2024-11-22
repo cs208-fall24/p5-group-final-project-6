@@ -4,41 +4,65 @@ body{
     background-attachment: fixed;
 }
 h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: "Poppins", Arial, sans-serif;
     color: white;
-    font-size: 40px;
-    font-family: "Poppins", "Inter", Arial, sans-serif;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 3px 3px 10px black;
+    margin-top: 50px;
+    letter-spacing: 2px;
 }
 h2{
     color: white;
-    font-size: 35px;
+    font-size: 40px;
     font-family: "Poppins", "Inter", Arial, sans-serif; 
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 8px black;
+    margin-top: 20px;
 }
 h3{
     color: white;
-    font-size: 30px;
+    font-size: 35px;
     font-family: "Proxima Nova", "Roboto", "Montserrat", Arial, sans-serif;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 8px black;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 p{
     color: white;
     font-size: 20px;
     font-family: "Proxima Nova", "Roboto", "Montserrat", Arial, sans-serif;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 8px black;
+    margin-bottom: 20px;
 }
-
-.gifImg{
+.gifImg {
     display: block;
     width: 200px;
-    height: 150px;
-    position: static;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
 }
 
 section {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
     justify-content: left;
-    align-items: center; 
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+
+ul li {
+    font-size: 20px;
+    color: #FFD700;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
 }
