@@ -6,6 +6,11 @@ const sqlite3 = sql.verbose()
 // Create an in memory table to use
 const db = new sqlite3.Database(':memory:')
 
+db.run(`CREATE TABLE student2 (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  comment TEXT NOT NULL,
+  author TEXT NOT NULL)`)
+
 const app = express()
 app.use(express.static('public'))
 app.set('views', 'views')
@@ -25,6 +30,11 @@ app.get('/student1', function (req, res) {
 app.get('/student2', function (req, res) {
   console.log('GET called')
   res.render('student2')
+})
+
+app.get('/comments', function (req, res) {
+  console.log('GET called')
+  res.render('student2/comments')
 })
 
 app.get('/student3', function (req, res) {
