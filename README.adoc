@@ -125,7 +125,7 @@ janedoe123@u.boisestate.edu then you will need to create a branch named
 
 === Task 1 - Index page
 
-Create a the index page for a University major. You must use templates for this
+Create the index page for a University major. You must use templates for this
 project! If you want to use a different template engine that was detailed in the
 book you must get permission from the instructor AND your other team members
 before you make any changes to the default project structure.

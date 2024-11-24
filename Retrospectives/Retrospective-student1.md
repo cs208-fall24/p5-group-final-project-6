@@ -1,7 +1,7 @@
 # Retrospective
 
-- name: Jane Doe
-- email: janedoe@u.boisestate.edu
+- name: Dalton Bilau Goncalves
+- email: daltonbilaugonca@u.boisestate.edu
 
 ## Experience
 
