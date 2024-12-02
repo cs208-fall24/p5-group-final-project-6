@@ -32,6 +32,11 @@ app.get('/student2', function (req, res) {
   res.render('student2')
 })
 
+app.get('/comments', function (req, res) {
+  console.log('GET called')
+  res.render('student2/comments')
+})
+
 app.get('/student3', function (req, res) {
   console.log('GET called')
   res.render('student3')

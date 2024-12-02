@@ -1,3 +1,44 @@
 body{
-    background-color: hotpink;
+    background-image: url(https://images8.alphacoders.com/134/1349392.png);
+    background-position: center;
+    background-attachment: fixed;
+}
+h1{
+    color: white;
+    font-size: 40px;
+    font-family: "Poppins", "Inter", Arial, sans-serif;
+    text-shadow: 2px 2px 5px black;
+}
+h2{
+    color: white;
+    font-size: 35px;
+    font-family: "Poppins", "Inter", Arial, sans-serif; 
+    text-shadow: 2px 2px 5px black;
+}
+h3{
+    color: white;
+    font-size: 30px;
+    font-family: "Proxima Nova", "Roboto", "Montserrat", Arial, sans-serif;
+    text-shadow: 2px 2px 5px black;
+}
+p{
+    color: white;
+    font-size: 20px;
+    font-family: "Proxima Nova", "Roboto", "Montserrat", Arial, sans-serif;
+    text-shadow: 2px 2px 5px black;
+}
+
+.gifImg{
+    display: block;
+    width: 200px;
+    height: 150px;
+    position: static;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: left;
+    align-items: center; 
 }
