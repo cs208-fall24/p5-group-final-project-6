@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title Systems Engineering (PhD) - student 3
+  body
+    h1 Update Your Comment
+        form(action="/student3/comments/update" method="POST")
+            input(type="hidden" name="id" value=comments.id)
+            textarea(name="comment" required)= comments.comment
+            input(type="text" name="author" value=comments.author required)
+            button(type="submit") Update Comment
