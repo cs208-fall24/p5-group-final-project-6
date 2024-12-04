@@ -1,3 +1,132 @@
-body{
-    background-color: orange;
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: blanchedalmond; 
+    color: black;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    color: #876579; 
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    color: #876579; 
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: plum; 
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: purple;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  /* About Us Section */
+  #about p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  /* History Section */
+  #history p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+  
+  /* Skills Section */
+  #skills ul {
+    margin-bottom: 20px;
+  }
+  
+  #skills li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Mission Section */
+  #mission ol {
+    padding-left: 20px;
+  }
+  
+  #mission li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  #mission p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  #testimonials p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    background-color: plum;
+    color: black;
+    padding: 10px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
