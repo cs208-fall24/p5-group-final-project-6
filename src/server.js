@@ -100,7 +100,7 @@ app.get('/:student/comments', (req, res) => {
         console.error(err);
       }
       local.comments = rows;
-      res.render('student3/comments', local);
+      res.render(`${student}/comments`, local);
     }
   );
 });

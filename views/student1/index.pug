@@ -61,6 +61,19 @@ body
                     li Vibe
                     li Have I said Party?
 
-            form(action="/student1/comments", method="GET", style="display:inline;")
-                button(type="submit") Comment
+if comments && comments.length > 0
+  section
+    h2 Comments
+    p Here are some comments from the community!
+    ul
+      each comment in comments
+        li
+          = comment.comment
+          section Author: 
+            = comment.author
+else
+  section
 
+    section 
+        form(action="/student1/comments", method="GET", style="display:inline;")
+            button(type="submit") Comment
