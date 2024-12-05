@@ -55,7 +55,7 @@ app.get('/student1', function (req, res) {
   );
 });
 
-// Render student1 page
+// Render student2 page
 app.get('/student2', function (req, res) {
 
   local.comments = [];
