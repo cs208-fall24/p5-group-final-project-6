@@ -1,28 +1,33 @@
 doctype html
+
 html
   head
-    title Comments 
+    title Underwater Basket Weaving - student 2
+    link(rel='stylesheet' href='css/student2.css')
   body
-    header
-      h1 Comment Section
-      nav
-        ul
-          li: a(href='/student2') Back to Underwater Basket Weaving
-    main
-      section
-        h2 Leave a Comment
-        form(action='/submit-comment' method='POST') 
-          label(for='name') Name:
-          input(type='text' id='name' name='name' required)
-          br
-          label(for='comment') Comment:
-          textarea(id='comment' name='comment' required)
-          br
-          button(type='submit') Submit
-      section
-        h2 Previous Comments
-       
+    h1 Comments!! 
 
-         
-    footer
-      p Copyright © 2024 University of AWESOME!
+    ul
+      - for (let i = 0; i < comments.length; i++)
+        li
+          =comments[i].comment
+        section Author:
+          =comments[i].author
+        ul
+          li
+            form(action="/student2/comments/update", method="GET")
+              input(type="hidden", name="id", value=comments[i].id)
+              button(type="submit") [Update]
+          li
+            form(action="/student2/comments/delete", method="POST")
+              input(type="hidden", name="id", value=comments[i].id)
+              button(type="submit") [Delete]
+
+    form(action="/student2/comments", method="POST")
+      p Add new comments!
+      input(type="text", name="comment", placeholder="Comment", required)
+      input(type="text", name="author", placeholder="Author", required)
+      button(type="submit") Add Comment
+
+    form(action="/student2", method="GET")
+      button(type="submit") Back to Page

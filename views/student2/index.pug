@@ -15,7 +15,7 @@ html
           li: a(href='#skills') Skills You'll Learn
           li: a(href='#mission') Our Mission
           li: a(href='#testimonials') Alumni Success Stories
-          li: a(href= '/comments') Comment Section
+          li: a(href= '/student2/comments') Comment Section
     main
       section#about
         h2 About Us
@@ -44,5 +44,9 @@ html
         h2 Alumni Success Stories
         p Meet the alum who achieved the extraordinary distinction of weaving a basket in every ocean on Earth—a true pioneer in submerged craftsmanship on a global scale! 
         img(src='images/student2alumni.jpg' alt='Alumni holding baskets underwater')
+
+    section 
+        form(action="/student3/comments", method="GET", style="display:inline;")
+            button(type="submit") Leave A Comment
     footer
       p Copyright © 2024 University of AWESOME!

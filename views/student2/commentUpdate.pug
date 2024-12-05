@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Update Comment - Student 2
+    link(rel="stylesheet" href="css/student2.css")
+  body
+    h1 Update Comment for Student 2
+
+    //- Form to update a comment
+    form(action="/student2/comments/update" method="post")
+      input(type="hidden" name="id" value=comments.id)
+      div
+        label(for="author") Author:
+        input(type="text" id="author" name="author" value=comments.author required)
+      div
+        label(for="comment") Comment:
+        textarea(id="comment" name="comment" required)= comments.comment
+      button(type="submit") Update
+
+    a(href="/student2/comments") Back to Comments
