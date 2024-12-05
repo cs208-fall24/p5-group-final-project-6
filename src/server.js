@@ -1,5 +1,5 @@
-import express from 'express'
-import sql from 'sqlite3'
+import express from 'express';
+import sql from 'sqlite3';
 
 const sqlite3 = sql.verbose()
 const local = { comments: []};
@@ -8,7 +8,7 @@ const local = { comments: []};
 const db = new sqlite3.Database(':memory:')
 
 // Create student1 table
-db.run(`CREATE TABLE student3 (
+db.run(`CREATE TABLE student1 (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   comment TEXT NOT NULL,
   author TEXT NOT NULL)`)
@@ -20,7 +20,7 @@ db.run(`CREATE TABLE student2 (
   author TEXT NOT NULL)`)
 
 // Create student3 table
-db.run(`CREATE TABLE student1 (
+db.run(`CREATE TABLE student3 (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   comment TEXT NOT NULL,
   author TEXT NOT NULL)`)

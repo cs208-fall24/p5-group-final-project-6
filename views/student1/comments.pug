@@ -7,10 +7,10 @@ html
 
     ul
       - for (let i = 0; i < comments.length; i++)
-        li.comment-item
-          p=comments[i].comment
-        span.author Author:
-          strong=comments[i].author
+        li
+          =comments[i].comment
+        section Author:
+          =comments[i].author
         ul
           li
             form(action="/student1/comments/update", method="GET")
@@ -22,10 +22,11 @@ html
               button(type="submit") [Delete]
 
     form(action="/student1/comments", method="POST")
-      p Add many new comment!
+      p Add many new comments!
       input(type="text", name="comment", placeholder="Comment", required)
       input(type="text", name="author", placeholder="Author", required)
       button(type="submit") Add Comment
 
     form(action="/student1", method="GET")
       button(type="submit") Back to Page
+
