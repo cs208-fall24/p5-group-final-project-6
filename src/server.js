@@ -43,6 +43,22 @@ app.get('/student1', function (req, res) {
   res.render('student1')
 })
 
+  local.comments = [];
+
+  // Get 5 rand comments
+  db.all(
+    `SELECT id, comment, author FROM student1 ORDER BY RANDOM() LIMIT 5`,
+    function (err, rows) {
+      if (err) {
+        console.log(err);
+      }
+      local.comments = rows;
+      res.render('student1');
+    }
+  );
+});
+
+// Render student2 page
 app.get('/student2', function (req, res) {
   console.log('GET called')
   res.render('student2')
